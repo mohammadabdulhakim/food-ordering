@@ -5,10 +5,12 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <Link href={Routes.ROOT} className="flex items-center justify-start gap-2 flex-1">
-      <Image src={"/logo.png"} width={35} height={35} alt="Logo" />{" "}
-      <h1 className="text-primary font-bold text-3xl">Koshari</h1>
-    </Link>
+    <div className="flex-1 flex justify-start">
+      <Link href={Routes.ROOT} className="flex items-center gap-2">
+        <Image src={"/logo.png"} width={35} height={35} alt="Logo" loading={"eager"} priority />{" "}
+        <h1 className="text-primary font-bold text-3xl">Koshari</h1>
+      </Link>
+    </div>
   );
 };
 
